@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.graphics.generator.Secondary">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="40.0" prefWidth="600.0" text="Diagnóstico ESG">
+         <font>
+            <Font name="JetBrains Mono Regular" size="21.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="-1.0" layoutY="7.0" prefHeight="401.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="17.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="557.0" minWidth="10.0" prefWidth="409.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="5.0" prefWidth="107.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="71.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="329.0" text="Sua empresa pratica coleta seletiva dos resíduos produzidos?" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label prefHeight="17.0" prefWidth="271.0" text="A empresa usa alguma fonte de energia renovável?" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label prefHeight="17.0" prefWidth="320.0" text="A empresa está conectada com a rede de saneamento local?" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="A empresa compensa o CO² produzido em seu negócio?" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="A empresa possui Plano de Gestão de Resíduos Sólidos? (PGRS)" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <ChoiceBox fx:id="btnChoiceBox1" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="btnChoiceBox2" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="btnChoiceBox3" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <ChoiceBox fx:id="btnChoiceBox4" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <ChoiceBox fx:id="btnChoiceBox5" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button fx:id="btnClick" mnemonicParsing="false" onAction="#btnClick" text="Proxima" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="417.0" text="Empresa:">
+                     <font>
+                        <Font name="JetBrains Mono Regular" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="btnLabel1" alignment="CENTER" prefHeight="17.0" prefWidth="410.0" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <Label alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="20.0" prefWidth="414.0" text="Perguntas de avaliação da categoria E (Meio Ambiente.)" textAlignment="CENTER" textFill="#009721" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

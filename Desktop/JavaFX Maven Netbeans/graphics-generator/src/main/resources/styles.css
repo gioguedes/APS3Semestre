@@ -1,0 +1,84 @@
+/* Estilos para o PieChart */
+.pie-chart .chart-pie-label {
+    -fx-font-size: 14px; /* Define o tamanho da fonte dos rótulos do PieChart */
+    -fx-fill: white; /* Altera a cor do texto das labels para branco */
+}
+
+.pie-chart .chart-legend-item-symbol {
+    -fx-background-color: transparent; /* Torna os ícones da legenda transparentes */
+}
+
+/* Correção para a aplicação de cores */
+.default-color0.chart-pie {
+    -fx-pie-color: green; /* Cor verde para a primeira fatia */
+}
+
+.default-color1.chart-pie {
+    -fx-pie-color: blue; /* Cor azul para a segunda fatia */
+}
+
+.default-color2.chart-pie {
+    -fx-pie-color: red; /* Cor vermelha para a terceira fatia */
+}
+
+.pie-chart .chart-legend {
+    -fx-text-fill: white; /* Define a cor do texto da legenda */
+}
+
+/* Estilos para o BarChart */
+.bar-chart .chart-legend-item-symbol {
+    -fx-background-color: transparent; /* Torna os ícones da legenda transparentes */
+}
+
+.bar-chart .chart-bar {
+    -fx-background-radius: 10; /* Define o raio dos cantos das barras */
+    -fx-padding: 10px; /* Adiciona um espaçamento interno às barras */
+}
+
+.bar-chart .data0.chart-bar {
+    -fx-bar-fill: green; /* Cor verde para a primeira série de dados */
+}
+
+.bar-chart .data1.chart-bar {
+    -fx-bar-fill: blue; /* Cor azul para a segunda série de dados */
+}
+
+.bar-chart .data2.chart-bar {
+    -fx-bar-fill: red; /* Cor vermelha para a terceira série de dados */
+}
+
+/* Melhoria na aparência geral */
+.chart {
+    -fx-background-color: #188067; /* Cor de fundo geral dos gráficos */
+    -fx-padding: 20px; /* Adiciona um espaçamento interno aos gráficos */
+    -fx-background-radius: 15; /* Define o raio dos cantos do gráfico */
+}
+
+.chart-title {
+    -fx-font-size: 20px; /* Define o tamanho da fonte do título do gráfico */
+    -fx-text-fill: white; /* Define a cor do texto do título do gráfico */
+}
+
+.axis-label {
+    -fx-text-fill: white; /* Define a cor do texto dos rótulos dos eixos */
+}
+
+.axis {
+    -fx-tick-label-fill: white; /* Define a cor das labels dos ticks dos eixos */
+    -fx-tick-mark-length: 5px; /* Define o comprimento das marcas dos ticks */
+}
+
+.bar-chart .chart-plot-background {
+    -fx-background-color: transparent; /* Torna o fundo do gráfico de barras transparente */
+}
+
+/* Remover a caixinha na legenda do gráfico de barras */
+.bar-chart .chart-legend-item {
+    -fx-background-color: transparent; /* Torna o fundo da legenda transparente */
+    -fx-border-color: transparent; /* Remove a borda da legenda */
+    -fx-padding: 0; /* Remove o padding da legenda */
+}
+
+.bar-chart .chart-legend-item-label {
+    -fx-text-fill: transparent; /* Torna o texto da legenda transparente */
+}
